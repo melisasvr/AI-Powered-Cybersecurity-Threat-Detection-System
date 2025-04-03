@@ -77,6 +77,20 @@ All models saved to ./models
 - Load saved models using detector.load_models() and run predictions without retraining.
 
 
+## File Structure
+```AI-Powered-Cybersecurity-Threat-Detection/
+├── main.py              # Main script with all functionality
+├── models/              # Directory for saved models (created after running)
+│   ├── network_autoencoder.pkl
+│   ├── network_isoforest.pkl
+│   ├── network_scaler.pkl
+│   ├── malware_detector.pkl
+│   ├── phishing_vectorizer.pkl
+│   └── phishing_detector.pkl
+├── requirements.txt     # List of Python dependencies
+└── README.md            # This file
+```
+
 ## How It Works
 - Network Anomaly Detection:
 - Uses an MLPRegressor as an autoencoder and Isolation Forest to detect anomalies.
